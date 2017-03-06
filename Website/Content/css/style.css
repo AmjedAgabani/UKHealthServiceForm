@@ -1,0 +1,320 @@
+/* Page reset */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Page Header */
+
+.header .logo {
+    text-align: center;
+}
+
+.header .logo img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Navigation Bar */
+
+.nav {
+    background: #2B2B2B;
+    background-image: -webkit-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+    background-image: -moz-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+    background-image: -o-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+    background-image: linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+    box-shadow: 2px 2px 3px #888;
+    font-size: 0;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 1px #0E0E0E;
+    -webkit-box-shadow: 2px 2px 3px #888;
+    -moz-box-shadow: 2px 2px 3px #888;
+}
+
+.nav ul {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+    text-align: left;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-center {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.nav ul:before,
+.nav ul:after {
+    content: " ";
+    display: table;
+}
+
+.nav ul:after {
+    clear: both;
+}
+
+.nav ul.primary {
+    margin: 0;
+}
+
+.nav ul.primary li a {
+    border-right: 1px solid #3D3D3D;
+    display: block;
+    padding: 20px 30px;
+}
+
+.nav ul.primary li:last-child a {
+    border-right: none;
+}
+
+.nav ul.primary li a:hover {
+    color: #000;
+}
+
+.nav ul.primary li:hover a {
+    background: #fff;
+    color: #666;
+    text-shadow: none;
+}
+
+.nav ul.primary li:hover > a {
+    color: #000;
+}
+
+.nav ul.primary li:hover ul {
+    background: #fff;
+    display: block;
+}
+
+.nav ul.sub {
+    box-shadow: 2px 2px 0 #BEBEBE;
+    display: none;
+    position: absolute;
+    width: 35%;
+    z-index: 200;
+}
+
+.nav ul.sub li {
+    float: none;
+    margin: 0;
+}
+
+.nav ul.sub li a {
+    border-bottom: 1px dotted #ccc;
+    border-right: none;
+    color: #000;
+    padding: 15px 30px;
+}
+
+.nav ul.sub li:last-child a {
+    border-bottom: none;
+}
+
+.nav ul.sub li a:hover {
+    background: #eeeeee;
+    color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-wrap {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .nav-center {
+        display: block;
+    }
+
+    .nav li {
+        float: none;
+    }
+
+    .nav ul.primary li:hover a {
+        background: none;
+        color: #8B8B8B;
+        text-shadow: 1px 1px #000;
+    }
+
+    .nav ul.primary li:hover ul {
+        background: #272727;
+        color: #fff;
+        display: block;
+    }
+
+    .nav ul.sub {
+        box-shadow: none;
+        display: block;
+        position: static;
+        width: 100%;
+    }
+
+    .nav ul.sub li a {
+        background: #272727;
+        border: none;
+        color: #8B8B8B;
+    }
+
+    .nav ul.sub li a:hover {
+        background: none;
+        color: #ccc;
+    }
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.page-banner img {
+    height: auto;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+/* Home page styling */
+
+.guarantee {
+    text-align: center;
+}
+
+.guarantee img {
+    height: 75px;
+    width: 75px;
+}
+
+.appointment-button {
+    background: #333;
+    color: #fff;
+    display: inline-block;
+    font-family: "Poiret One", Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 100px;
+    margin-top: 25px;
+    letter-spacing: 0.3em;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.appointment-button:hover {
+    background-color: #1365B2;
+}
+
+/* Services page Styling */
+
+.info-panel {
+    border: 1px solid black;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.morebutton {
+    background-color: white;
+    border: 1px solid #333;
+    color: black;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    margin-top: 50px;
+    padding: 12px 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.morebutton:hover {
+    background-color: #1365B2;
+    color: #ffffff;
+}
+
+/* Appointment page Styling */
+
+.optionlist li {
+    font-size: 20px;
+}
+
+.optionlist p {
+    font-family: Raleway, Arial, sans-serif;
+}
+
+/* Contact page Styling */
+
+.map {
+    padding-top: 45px;
+}
+
+.highlight {
+    color: #1365B2;
+    font-weight: 600;
+}
+
+.message-form input {
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    margin: 8px 0;
+    outline: none;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+.message-form input:focus {
+    border: 2px solid #8caee5;
+}
+
+.message-form textarea {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    height: 150px;
+    padding: 12px 20px;
+    resize: none;
+    width: 100%;
+
+}
+
+.message-form input[type=submit] {
+    background-color: #7E7E7C;
+    display: block;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+.message-form input[type=submit]:hover {
+    color: white;
+    background-color: #1365B2;
+}
+
+/* Page Footer */
+
+.footer {
+    background: #2B2B2B;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer a {
+    color: inherit;
+}
